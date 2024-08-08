@@ -1,7 +1,8 @@
 #include "sort.h"
 
 /**
- * swap_nodes - Échange deux nœuds dans une liste doublement chaînée de type listint_t.
+ * swap_nodes - Échange deux nœuds dans une liste doublement chaînée
+ * de type listint_t.
  * @h: Un pointeur vers la tête de la liste doublement chaînée.
  * @n1: Un pointeur vers le premier nœud à échanger.
  * @n2: Le deuxième nœud à échanger.
