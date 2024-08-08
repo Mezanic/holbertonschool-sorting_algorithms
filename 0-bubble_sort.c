@@ -28,22 +28,24 @@ void swap_int(int *array, size_t a, size_t b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i = 0, j = 0;
+	size_t i = 0;
+	int uwu = 1;
 
 	if (array == NULL || size < 2)
 		return;
 
+	while (uwu == 1)
+	{	
+		uwu = 0;
 
-	for (i = 0; i < size - 1; i++)
-	{
-		for (j = 0; j < size - i - 1; j++)
+		for (i = 0; i < size - 1; i++)
 		{
-			if (array[j] > array[j + 1])
+			if (array[i] > array[i + 1])
 			{
-				swap_int(array, j, j + 1);
+				swap_int(array, i, i + 1);
+				uwu = 1;
 				print_array(array, size);
 			}
 		}
 	}
-
 }
