@@ -2,15 +2,15 @@
 
 /**
  * bubble_sort -  sorts array of integers in ascending order
- *  using the Bubble sort algorithm
- *  @array: array of integer
- *  @size: size of array
+ * using the Bubble sort algorithm
+ * @array: array of integer
+ * @size: size of array
  *
  *  Return: void
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i = 0;
+	size_t i;
 	int uwu = 1, swapp;
 
 	if (array == NULL || size < 2)
